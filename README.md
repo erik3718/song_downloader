@@ -16,7 +16,7 @@ Chrome or Chromium (both should work as Selenium is made for Chrome but I used C
 
 This script will not work if you don't change list_of_songs variable and number_of_all_songs variable paths to your own paths to file called songs.
 You should also change varible path_to_file to path on which you put your Selnium Webdriver which you downloaded in step before.
-
+Both of these variables are at the begging and marked down with # 
 ___________________________________________________
 
 I'm aware the script throws out those anoying warnings and I will fix it later whis month.
