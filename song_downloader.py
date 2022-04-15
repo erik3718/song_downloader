@@ -2,13 +2,15 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-
 #bot tries to everything
 
+#path to file for selenium webdirver
 path_to_file = "/usr/local/bin/chromedriver"
-driver = webdriver.Chrome(path_to_file)
 
+driver = webdriver.Chrome(path_to_file)
 driver.get("https://wwv.mp3juices.icu")
+
+#path to file for songs
 list_of_songs = open("/home/tickatus/my_python_programs/song_downloader/songs", "r")
 number_of_all_songs = open("/home/tickatus/my_python_programs/song_downloader/songs", "r")
 
