@@ -12,7 +12,8 @@ Put your list of songs in song file and it will download everything and shutdown
 Selenium Webdriver (you can download it from https://www.selenium.dev/downloads/)
 Chrome or Chromium (both should work as Selenium is made for Chrome but I used Chromium so I suppose it's the same thing)
 
-*WARNING 
+*WARNING
+
 This script will not work if you don't change list_of_songs variable and number_of_all_songs variable paths to your own paths to file called songs.
 You should also change varible path_to_file to path on which you put your Selnium Webdriver which you downloaded in step before.
 
