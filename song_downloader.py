@@ -49,7 +49,7 @@ def song_download_process():
                 time.sleep(8)
                 driver.switch_to.default_content()
                 driver.switch_to.frame(1)
-                driver.find_element_by_tag_name("iframe").click()
+                driver.find_element(By.TAG_NAME, "iframe").click()
 
                 #closing those extra ads that open after pressing second download
                 driver.switch_to.window(driver.window_handles[1])
