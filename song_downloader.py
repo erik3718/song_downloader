@@ -1,13 +1,13 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 #bot tries to everything
 
-#path to file for selenium webdirver
-path_to_file = "/usr/local/bin/chromedriver"
-
-driver = webdriver.Chrome(path_to_file)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://wwv.mp3juices.icu")
 
 #path to file for songs
@@ -27,17 +27,17 @@ def song_download_process():
         for i in range(number_of_songs):
                 global counter
                 #searching for search bar
-                search = search = driver.find_element_by_name("buscar")
+                search = driver.find_element(By.NAME, "buscar")
                 search.send_keys(all_music[counter])
                 search.send_keys(Keys.RETURN)
 
                 #stopping automated music
                 time.sleep(2)
-                link = driver.find_element_by_class_name("play")
+                link = driver.find_element(By.CLASS_NAME, "play")
                 link.click()
 
                 #presing first download button
-                link2 = driver.find_element_by_class_name("d")
+                link2 = driver.find_element(By.CLASS_NAME, "d")
                 link2.click()
 
                 #closing ads that get open in new tab
