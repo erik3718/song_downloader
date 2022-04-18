@@ -11,6 +11,8 @@ Put your list of songs in song file and it will download everything and shutdown
 
 Selenium Webdriver (you can download it from https://www.selenium.dev/downloads/)
 Chrome or Chromium (both should work as Selenium is made for Chrome but I used Chromium so I suppose it's the same thing)
+OR 
+You can just (pip3 install -U selenium) and (pip3 install webdriver-manager)
 
 *WARNING
 
