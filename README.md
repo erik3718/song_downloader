@@ -2,7 +2,7 @@
 
 Song Downloader is simple project of mine that does as it names says, it downloads songs.
 All of your songs are downloaded for free from website called https://wwv.mp3juices.icu. This script is based on python and Selenium Webdriver.
-I am not associated with this website in any way shape or form I just used it because it was free to download and simple to do.
+I am not associated with this website in any way shape or form.
 
 Put your list of songs in song file and it will download everything and shutdown ads and even stop autoplaying music.
 
